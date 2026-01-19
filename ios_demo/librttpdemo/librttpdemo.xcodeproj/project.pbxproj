@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33034D2A2EEBE57500134FA6 /* RTSocketAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33034D282EEBE57400134FA6 /* RTSocketAPI.swift */; };
+		33034D2B2EEBE57500134FA6 /* RttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33034D292EEBE57400134FA6 /* RttpClient.swift */; };
+		58DF06962181E2E300580B1C /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58DF06952181E2E300580B1C /* ExternalAccessory.framework */; };
+		B80CCDA6217B44DD00DF687F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CCDA5217B44DD00DF687F /* ViewController.swift */; };
+		B80CCDA9217B44DD00DF687F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B80CCDA7217B44DD00DF687F /* Main.storyboard */; };
+		B80CCDAB217B44E100DF687F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B80CCDAA217B44E100DF687F /* Assets.xcassets */; };
+		B8280495217C4304002DDD4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8280494217C4304002DDD4E /* AppDelegate.swift */; };
+		B8F011B92F0688A80058F0AD /* RtsocketFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8F011B72F0681E40058F0AD /* RtsocketFramework.xcframework */; };
+		B8F011BA2F0688A80058F0AD /* RtsocketFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8F011B72F0681E40058F0AD /* RtsocketFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		33034D2E2EED680000134FA6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B8F011BA2F0688A80058F0AD /* RtsocketFramework.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		33034D282EEBE57400134FA6 /* RTSocketAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTSocketAPI.swift; sourceTree = "<group>"; };
+		33034D292EEBE57400134FA6 /* RttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RttpClient.swift; sourceTree = "<group>"; };
+		58DF06952181E2E300580B1C /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		58DF06972181E2E300580B1C /* librttpdemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = librttpdemo.entitlements; sourceTree = "<group>"; };
+		B80CCDA0217B44DD00DF687F /* librttpdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = librttpdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B80CCDA5217B44DD00DF687F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B80CCDA8217B44DD00DF687F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B80CCDAA217B44E100DF687F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B80CCDAF217B44E100DF687F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8280493217C4304002DDD4E /* librttpdemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "librttpdemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		B8280494217C4304002DDD4E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8F011B72F0681E40058F0AD /* RtsocketFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RtsocketFramework.xcframework; path = ../../api/ios/RtsocketFramework.xcframework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B80CCD9D217B44DD00DF687F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58DF06962181E2E300580B1C /* ExternalAccessory.framework in Frameworks */,
+				B8F011B92F0688A80058F0AD /* RtsocketFramework.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B80CCD97217B44DD00DF687F = {
+			isa = PBXGroup;
+			children = (
+				B80CCDA2217B44DD00DF687F /* librttpdemo */,
+				B80CCDA1217B44DD00DF687F /* Products */,
+				B82804A3217F5F9C002DDD4E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B80CCDA1217B44DD00DF687F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B80CCDA0217B44DD00DF687F /* librttpdemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B80CCDA2217B44DD00DF687F /* librttpdemo */ = {
+			isa = PBXGroup;
+			children = (
+				B8280494217C4304002DDD4E /* AppDelegate.swift */,
+				33034D282EEBE57400134FA6 /* RTSocketAPI.swift */,
+				33034D292EEBE57400134FA6 /* RttpClient.swift */,
+				58DF06972181E2E300580B1C /* librttpdemo.entitlements */,
+				B8280493217C4304002DDD4E /* librttpdemo-Bridging-Header.h */,
+				B80CCDA5217B44DD00DF687F /* ViewController.swift */,
+				B80CCDA7217B44DD00DF687F /* Main.storyboard */,
+				B80CCDAA217B44E100DF687F /* Assets.xcassets */,
+				B80CCDAF217B44E100DF687F /* Info.plist */,
+			);
+			path = librttpdemo;
+			sourceTree = "<group>";
+		};
+		B82804A3217F5F9C002DDD4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8F011B72F0681E40058F0AD /* RtsocketFramework.xcframework */,
+				58DF06952181E2E300580B1C /* ExternalAccessory.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B80CCD9F217B44DD00DF687F /* librttpdemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B80CCDB2217B44E100DF687F /* Build configuration list for PBXNativeTarget "librttpdemo" */;
+			buildPhases = (
+				B80CCD9C217B44DD00DF687F /* Sources */,
+				B80CCD9D217B44DD00DF687F /* Frameworks */,
+				B80CCD9E217B44DD00DF687F /* Resources */,
+				33034D2E2EED680000134FA6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = librttpdemo;
+			productName = librttpdemo;
+			productReference = B80CCDA0217B44DD00DF687F /* librttpdemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B80CCD98217B44DD00DF687F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = rtttech;
+				TargetAttributes = {
+					B80CCD9F217B44DD00DF687F = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+						SystemCapabilities = {
+							com.apple.WAC = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = B80CCD9B217B44DD00DF687F /* Build configuration list for PBXProject "librttpdemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B80CCD97217B44DD00DF687F;
+			productRefGroup = B80CCDA1217B44DD00DF687F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B80CCD9F217B44DD00DF687F /* librttpdemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B80CCD9E217B44DD00DF687F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B80CCDAB217B44E100DF687F /* Assets.xcassets in Resources */,
+				B80CCDA9217B44DD00DF687F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B80CCD9C217B44DD00DF687F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8280495217C4304002DDD4E /* AppDelegate.swift in Sources */,
+				33034D2B2EEBE57500134FA6 /* RttpClient.swift in Sources */,
+				33034D2A2EEBE57500134FA6 /* RTSocketAPI.swift in Sources */,
+				B80CCDA6217B44DD00DF687F /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B80CCDA7217B44DD00DF687F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B80CCDA8217B44DD00DF687F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B80CCDB0217B44E100DF687F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B80CCDB1217B44E100DF687F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B80CCDB3217B44E100DF687F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_UNDEFINED_BEHAVIOR_SANITIZER_INTEGER = YES;
+				CLANG_UNDEFINED_BEHAVIOR_SANITIZER_NULLABILITY = YES;
+				CODE_SIGN_ENTITLEMENTS = librttpdemo/librttpdemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3275TQ4K9T;
+				FRAMEWORK_SEARCH_PATHS = ../../api/iOS;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = SOCKADDR_WITH_LEN;
+				INFOPLIST_FILE = librttpdemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/../../api/iOS/RtsocketFramework.framework/Versions/A",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lc++",
+					"-lstdc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rtttech.com.rttpdemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "librttpdemo/librttpdemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B80CCDB4217B44E100DF687F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_UNDEFINED_BEHAVIOR_SANITIZER_INTEGER = YES;
+				CLANG_UNDEFINED_BEHAVIOR_SANITIZER_NULLABILITY = YES;
+				CODE_SIGN_ENTITLEMENTS = librttpdemo/librttpdemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3275TQ4K9T;
+				FRAMEWORK_SEARCH_PATHS = ../../api/iOS;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = SOCKADDR_WITH_LEN;
+				INFOPLIST_FILE = librttpdemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../api/iOS/RtsocketFramework.framework/Versions/A";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lc++",
+					"-lstdc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rtttech.com.rttpdemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "librttpdemo/librttpdemo-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B80CCD9B217B44DD00DF687F /* Build configuration list for PBXProject "librttpdemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B80CCDB0217B44E100DF687F /* Debug */,
+				B80CCDB1217B44E100DF687F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B80CCDB2217B44E100DF687F /* Build configuration list for PBXNativeTarget "librttpdemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B80CCDB3217B44E100DF687F /* Debug */,
+				B80CCDB4217B44E100DF687F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B80CCD98217B44DD00DF687F /* Project object */;
+}

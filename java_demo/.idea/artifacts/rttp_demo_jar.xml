@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="rttp_demo:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/rttp_demo_jar</output-path>
+    <root id="archive" name="rttp_demo.jar">
+      <element id="module-output" name="rttp_demo" />
+    </root>
+  </artifact>
+</component>

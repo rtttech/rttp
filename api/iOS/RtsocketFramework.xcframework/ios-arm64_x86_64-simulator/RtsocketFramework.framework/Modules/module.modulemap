@@ -1,0 +1,5 @@
+framework module RtsocketFramework {
+    umbrella header "rtsocket.h"
+    export *
+    module * { export * }
+}

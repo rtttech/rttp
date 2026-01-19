@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 在此配置需要备份的数据 -->
+    <include domain="sharedpref" path="." />
+    <include domain="database" path="." />
+    <include domain="files" path="." />
+    <!-- 排除不需要备份的数据 -->
+    <exclude domain="sharedpref" path="temp_prefs.xml" />
+    <exclude domain="files" path="temp/" />
+</full-backup-content>

@@ -1,0 +1,5 @@
+framework module RttpStubFramework {
+    umbrella header "rttp_stub.h"
+    export *
+    module * { export * }
+}

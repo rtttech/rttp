@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">RTTP Demo</string>
+    <string name="server_ip">服务器IP：</string>
+    <string name="port">端口：</string>
+    <string name="connect">连接</string>
+    <string name="disconnect">断开连接</string>
+    <string name="connecting">连接中...</string>
+    <string name="status">连接状态：</string>
+    <string name="not_connected">未连接</string>
+    <string name="connected">已连接</string>
+    <string name="latency">平均延迟：</string>
+    <string name="frequency">发送频率：</string>
+    <string name="stats">统计信息：</string>
+    <string name="send_packets">发送数据包：</string>
+    <string name="receive_packets">接收响应：</string>
+    <string name="failed_count">失败次数：</string>
+    <string name="packet_loss">丢包率：</string>
+    <string name="average_latency">平均延迟：</string>
+</resources>
