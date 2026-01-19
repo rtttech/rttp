@@ -28,11 +28,11 @@ Whether you're building a massive multiplayer game, a high-frequency trading pla
 
 RTTP maintains high throughput and low latency even as network conditions degrade, whereas TCP performance often collapses under packet loss.
 
-| Condition | TCP Performance | RTTP Performance |
-| :--- | :--- | :--- |
-| **Stable (0% Loss)** | ![TCP Stable](http://www.rtttech.com/assets/images/0lost-71cb81856c6c76fc412f3b1ae2e6a52b.png) | High Performance Baseline |
-| **10% Packet Loss** | ![TCP 10%](http://www.rtttech.com/assets/images/10lost-8d011a906720e384c5b31e724039a3e3.png) | **Consistently Low Latency** |
-| **20% Packet Loss** | ![TCP 20%](http://www.rtttech.com/assets/images/20lost-4d0f2aab072fb05671847802306398f2.png) | **Reliable & Responsive** |
+| Condition | Performance |
+| :--- | :--- |
+| **Stable (0% Loss)** | ![Stable](http://www.rtttech.com/assets/images/0lost-71cb81856c6c76fc412f3b1ae2e6a52b.png) |
+| **10% Packet Loss** | ![10%](http://www.rtttech.com/assets/images/10lost-8d011a906720e384c5b31e724039a3e3.png) |
+| **20% Packet Loss** | ![20%](http://www.rtttech.com/assets/images/20lost-4d0f2aab072fb05671847802306398f2.png) |
 
 ---
 
