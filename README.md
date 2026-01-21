@@ -1,5 +1,7 @@
 # RTTP: Real-Time Transmission Protocol
 
+[English](README.md) | [简体中文](README.zh.md)
+
 [![Platform](https://img.shields.io/badge/platform-Windows%20|%20Linux%20|%20macOS%20|%20iOS%20|%20Android-blue.svg)](#)
 [![Unity](https://img.shields.io/badge/Unity-Supported-green.svg)](#)
 [![Language](https://img.shields.io/badge/language-C%2B%2B%20|%20C%23%20|%20Java-orange.svg)](#)
@@ -31,36 +33,6 @@ RTTP maintains high throughput and low latency even as network conditions degrad
 ![Stable](http://www.rtttech.com/assets/images/0lost-71cb81856c6c76fc412f3b1ae2e6a52b.png)
 ![10%](http://www.rtttech.com/assets/images/10lost-8d011a906720e384c5b31e724039a3e3.png)
 ![20%](http://www.rtttech.com/assets/images/20lost-4d0f2aab072fb05671847802306398f2.png)
-
----
-
-## 🛠️ Quick Start (C++ API)
-
-Integrating RTTP into your packet-based system is straightforward. Here’s a minimal integration snippet:
-
-```cpp
-#include "rtsocket.h"
-
-// 1. Initialize the RTTP engine
-RTEngine engine = rt_init(NULL);
-
-// 2. Set up callbacks for network events and packet output
-rt_set_callback(engine, on_socket_event, on_send_packet);
-
-// 3. Create a socket and connect
-RTSOCKET s = rt_socket(engine, RTSM_LOW_LATENCY);
-rt_connect(engine, s, (const struct sockaddr *)&remote_addr, sizeof(remote_addr));
-
-// 4. In your application's heartbeat (every 1-10ms)
-void update() {
-    rt_tick(engine); 
-}
-
-// 5. Input incoming UDP packets back to RTTP
-void on_udp_receive(const char* data, int len, const struct sockaddr* from) {
-    rt_incoming_packet(engine, data, len, from, sizeof(struct sockaddr_in));
-}
-```
 
 ---
 
