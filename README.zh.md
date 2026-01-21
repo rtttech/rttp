@@ -26,7 +26,7 @@
 
 ## 📊 对比测试
 
-![Stable](http://www.rtttech.com/assets/images/0lost-71cb81856c6c76fc412f3b1ae2e6a52b.png)
+![Stable](http://www.rtttech.com/assets/images/0lost-5c97e21028a5d5c33db85a74688ecd04.png)
 ![10%](http://www.rtttech.com/assets/images/10lost-8d011a906720e384c5b31e724039a3e3.png)
 ![20%](http://www.rtttech.com/assets/images/20lost-4d0f2aab072fb05671847802306398f2.png)
 
