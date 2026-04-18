@@ -59,7 +59,7 @@ cmake --build .
 
 ## 📧 联系与支持
 
--   **官方网站**: [rtttech.com](http://www.rtttech.com)
+-   **官方网站**: [rtttech.com](https://www.rtttech.com)
 -   **电子邮箱**: [support@rtttech.com](mailto:support@rtttech.com)
 
 ---
